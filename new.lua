@@ -203,7 +203,7 @@ TextButton.MouseButton1Click:Connect(function()
     end
 
     InfoShowing.Text = "Showing info for: "..currentName
-    NinGained.Text = "Ninjutsu Gained: "..CommaValue(nameList[currentName][1] - currentNin)
+    NinGained.Text = "Ninjutsu Gained: "..CommaValue(currentNin - nameList[currentName][1])
     FirstChecked.Text = "Initial Check: "..nameList[currentName][2]
     CurrentNin.Text = "Current Ninjutsu: "..CommaValue(currentNin)
     OldNin.Text = "Old Ninjutsu: "..CommaValue(nameList[currentName][1])
