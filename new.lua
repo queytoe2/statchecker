@@ -212,7 +212,7 @@ TextButton.MouseButton1Click:Connect(function()
         local newScore = string.gsub(plrScrollFrame.Text, "%D", "")
         currentNin = newScore
 
-        NinGained.Text = "Ninjutsu Gained: "..CommaValue(nameList[currentName][1] - currentNin)
+        NinGained.Text = "Ninjutsu Gained: "..CommaValue(currentNin - nameList[currentName][1])
         CurrentNin.Text = "Current Ninjutsu: "..CommaValue(currentNin)
     end)
 
