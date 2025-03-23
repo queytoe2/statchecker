@@ -188,6 +188,8 @@ TextButton.MouseButton1Click:Connect(function()
         local plrName = scrollFrame["Name"..p].Text
         plrName = string.gsub(plrName, "(%[.*%])", "")
         plrName = string.gsub(plrName, " ", "", 3)
+        plrName = string.gsub(plrName, ".*%)", "")
+        plrName = string.sub(plrName,2,string.len(plrName))
         if currentName == plrName then
             plrScrollFrame = scrollFrame["Score"..p]
             local newScore = string.gsub(scrollFrame["Score"..p].Text, "%D", "")
